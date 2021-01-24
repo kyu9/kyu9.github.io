@@ -99,9 +99,9 @@ author:
   location         : "South Korea"
   email            : "kyudo97@naver.com"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+    # - label: "Website"
+    #   icon: "fas fa-fw fa-link"
+    #   # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -111,6 +111,8 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/kyu9"
+    - label: "category"
+      icon: "fab fa-fw fa-facebook-square"
 
 # Site Footer
 footer:
