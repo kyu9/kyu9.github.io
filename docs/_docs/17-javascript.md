@@ -1,9 +1,11 @@
 ---
-title: "JavaScript"
+title: JavaScript
 permalink: /docs/javascript/
-excerpt: "Instructions for customizing and building the theme's scripts."
-last_modified_at: 2019-05-02T08:55:27-04:00
+excerpt: Instructions for customizing and building the theme's scripts.
+last_modified_at: '2019-05-02T12:55:27.000Z'
 ---
+
+# 17-javascript
 
 The theme's `assets/js/main.min.js` script is built from several vendor, jQuery plugins, and other scripts found in [`assets/js/`](https://github.com/mmistakes/minimal-mistakes/tree/master/assets/js).
 
@@ -45,10 +47,7 @@ after_footer_scripts:
   - /assets/js/custom-script-loads-after-footer.js
 ```
 
-**Note:** If you assign `footer_scripts` the theme's `/assets/js/main.min.js` file will be deactivated. This script includes jQuery and various other plugins that you'll need to find replacements for and include separately.
-{: .notice--warning}
-
----
+**Note:** If you assign `footer_scripts` the theme's `/assets/js/main.min.js` file will be deactivated. This script includes jQuery and various other plugins that you'll need to find replacements for and include separately. {: .notice--warning}
 
 ## Build process
 
@@ -60,7 +59,7 @@ To get started:
 2. `cd` to the root of your project.
 3. Install all of the dependencies by running `npm install`.
 
-**Note:** If you upgraded from a previous version of the theme be sure you copied over [`package.json`](https://github.com/{{ site.repository }}/blob/master/package.json) prior to running `npm install`.
-{: .notice--warning}
+**Note:** If you upgraded from a previous version of the theme be sure you copied over [`package.json`](https://github.com/{{%20site.repository%20}}/blob/master/package.json) prior to running `npm install`. {: .notice--warning}
 
 If all goes well, running `npm run build:js` will compress/concatenate `_main.js` and all plugin scripts into `main.min.js`.
+

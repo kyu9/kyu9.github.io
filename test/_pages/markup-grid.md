@@ -6,4 +6,7 @@ taxonomy: markup
 entries_layout: grid
 ---
 
+# markup-grid
+
 Sample post listing for the tag `markup`.
+

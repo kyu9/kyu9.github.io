@@ -1,5 +1,5 @@
 ---
-title: "Markup: Title *with* **Markdown**"
+title: 'Markup: Title *with* **Markdown**'
 categories:
   - Markdown
 tags:
@@ -8,7 +8,10 @@ tags:
   - title
 ---
 
+# 2013-01-05-markup-title-with-markup
+
 Verify that:
 
-* The post title renders the word "with" in *italics* and the word "Markdown" in **bold**.
+* The post title renders the word "with" in _italics_ and the word "Markdown" in **bold**.
 * The post title markup should be removed from the browser window / tab.
+

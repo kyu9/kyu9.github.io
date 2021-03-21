@@ -1,18 +1,17 @@
 ---
-title: "Working with Collections"
+title: Working with Collections
 permalink: /docs/collections/
-excerpt: "Suggestions and Front Matter defaults for working with collections."
-last_modified_at: 2018-03-20T16:00:02-04:00
+excerpt: Suggestions and Front Matter defaults for working with collections.
+last_modified_at: '2018-03-20T20:00:02.000Z'
 ---
+
+# 13-collections
 
 Collections like posts and pages work as you'd expect. If you're new to them be sure to read [Jekyll's documentation](https://jekyllrb.com/docs/collections/).
 
-The theme has been built with collections in mind and you will find [several examples]({{ "/collection-archive/" | relative_url }}) on the demo site ([portfolio]({{ "/portfolio/" | relative_url }}), [recipes]({{ "/recipes/" | relative_url }}), [pets]({{ "/pets/" | relative_url }})). 
+The theme has been built with collections in mind and you will find \[several examples\]\(\) on the demo site \(\[portfolio\]\(\), \[recipes\]\(\), \[pets\]\(\)\).
 
-**Collections in the Wild:** This set of documentation is also [built as a collection](https://github.com/{{ site.repository }}/blob/master/docs/_docs/) if you're looking for a fully fleshed out example to inspect.
-{: .notice--info}
-
----
+**Collections in the Wild:** This set of documentation is also [built as a collection](https://github.com/{{%20site.repository%20}}/blob/master/docs/_docs/) if you're looking for a fully fleshed out example to inspect. {: .notice--info}
 
 A popular use case for collections is to build a portfolio section as part of one's personal site. Let's quickly walk through the steps to do that.
 
@@ -41,7 +40,7 @@ defaults:
       share: true
 ```
 
-Now make a portfolio.md file in the '_pages' folder.
+Now make a portfolio.md file in the '\_pages' folder.
 
 ```yaml
 ---
@@ -54,6 +53,7 @@ classes: wide
 ---
 ```
 
-And then create portfolio content like [`_portfolio/foo-bar-website.md`](https://github.com/{{ site.repository }}/blob/master/docs/_portfolio/foo-bar-website.md), to end up with something like this.
+And then create portfolio content like [`_portfolio/foo-bar-website.md`](https://github.com/{{%20site.repository%20}}/blob/master/docs/_portfolio/foo-bar-website.md), to end up with something like this.
 
-![portfolio collection example]({{ "/assets/images/mm-portfolio-collection-example.jpg" | relative_url }})
+!\[portfolio collection example\]\(\)
+

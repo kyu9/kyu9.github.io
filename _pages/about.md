@@ -1,10 +1,10 @@
----
- title: "이 블로그 설명서"
- permalink: /about/
- layout: single
- ---
+# about
 
+title: "이 블로그 설명서" permalink: /about/
 
-  이 블로그는 Github Pages 블로그 서비스인 github.io를 같이 만들어보는 샘플 블로그이다.
+## layout: single
 
- 모든 글을 볼 수 있다.
+이 블로그는 Github Pages 블로그 서비스인 github.io를 같이 만들어보는 샘플 블로그이다.
+
+모든 글을 볼 수 있다.
+

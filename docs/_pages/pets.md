@@ -7,4 +7,7 @@ entries_layout: grid
 classes: wide
 ---
 
+# pets
+
 Sample document listing for the collection `_pets`.
+

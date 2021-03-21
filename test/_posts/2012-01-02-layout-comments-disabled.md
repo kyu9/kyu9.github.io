@@ -1,5 +1,5 @@
 ---
-title: "Layout: Comments Disabled"
+title: 'Layout: Comments Disabled'
 comments: false
 categories:
   - Layout
@@ -9,6 +9,9 @@ tags:
   - layout
 ---
 
+# 2012-01-02-layout-comments-disabled
+
 This post has its comments disabled.
 
 There should be no comment form.
+

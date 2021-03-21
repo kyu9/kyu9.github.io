@@ -1,10 +1,2 @@
----
-title: "Post: Image (with Link)"
-categories:
-  - Post Formats
-tags:
-  - image
-  - Post Formats
----
+# 2010-08-05-post-image-linked
 
-[![foo](https://live.staticflickr.com/8361/8400335147_5fabaa504c_o.jpg)](https://flic.kr/p/dNiUYB)

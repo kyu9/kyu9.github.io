@@ -1,6 +1,8 @@
 ---
-title: "Chocolate Chip Cookies"
+title: Chocolate Chip Cookies
 ---
+
+# chocolate-chip-cookies
 
 A chocolate chip cookie is a drop cookie that originated in the United States and features chocolate chips as its distinguishing ingredient.
 
@@ -19,8 +21,8 @@ This recipe makes 4 dozen cookies.
 * 2 teaspoons vanilla extract
 * 2 large eggs
 * 2 cups semi-sweet chocolate chips
-* 1/2 teaspoon nutmeg (optional)
-* 1 cup chopped pecans or walnuts (optional)
+* 1/2 teaspoon nutmeg \(optional\)
+* 1 cup chopped pecans or walnuts \(optional\)
 
 ## Directions
 
@@ -29,3 +31,4 @@ This recipe makes 4 dozen cookies.
 3. In a large bowl, beat butter with sugar and brown sugar until creamy and light. Add vanilla and eggs, one at a time, and mix until incorporated.
 4. Gradually add dry mixture into the butter-sugar wet blend, mixing with a spatula until combined. Add chocolate chips and nuts until just mixed.
 5. Drop tablespoon-sized clumps onto un-greased cookie sheets. Bake for 8-12 minutes, or until pale brown. Allow to cool on the pan for a minute or three, then transfer cookies to a wire rack to finish cooling.
+

@@ -1,9 +1,11 @@
 ---
 permalink: /terms/
-title: "Terms and Privacy Policy"
-last_modified_at: 2017-10-20T12:42:38-04:00
+title: Terms and Privacy Policy
+last_modified_at: '2017-10-20T16:42:38.000Z'
 toc: true
 ---
+
+# terms
 
 ## Privacy Policy
 
@@ -15,9 +17,9 @@ First and foremost, I will never share your email address or any other personal 
 
 Like many other websites, this site uses log files to help learn about when, from where, and how often traffic flows to this site. The information in these log files include:
 
-* Internet Protocol addresses (IP)
+* Internet Protocol addresses \(IP\)
 * Types of browser
-* Internet Service Provider (ISP)
+* Internet Service Provider \(ISP\)
 * Date and time stamp
 * Referring and exit pages
 * Number of clicks
@@ -54,3 +56,4 @@ What this means for you:
 * I respect and value my readers too much to write anything other than my own genuine and objective opinions and advice.
 
 Just like this website, my Disclosure Policy is a work in progress. As the revenue streams evolve, so will this page.
+

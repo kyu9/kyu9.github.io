@@ -1,13 +1,15 @@
 ---
-title: "Working with Pages"
+title: Working with Pages
 permalink: /docs/pages/
-excerpt: "Suggestions and Front Matter defaults for working with pages."
-last_modified_at: 2016-11-03T11:13:12-04:00
+excerpt: Suggestions and Front Matter defaults for working with pages.
+last_modified_at: '2016-11-03T15:13:12.000Z'
 ---
+
+# 12-pages
 
 To better organize all of your pages you can centralize them into a single location similar to posts and collections.
 
-**Step 1:** Start by placing pages (`.md` or `.html` files) into a `_pages` directory. Meaningfully naming files should be the goal. Avoid patterns like `/about/index.md` as it makes distinguishing between multiple `index.md` files harder.
+**Step 1:** Start by placing pages \(`.md` or `.html` files\) into a `_pages` directory. Meaningfully naming files should be the goal. Avoid patterns like `/about/index.md` as it makes distinguishing between multiple `index.md` files harder.
 
 ```bash
 sample-project
@@ -23,11 +25,11 @@ sample-project
 
 Examples:
 
-| filename            | permalink              |
-| --------            | ---------              |
-| _pages/about.md     | `permalink: /about/`   |
-| _pages/home.md      | `permalink: /`         |
-| _pages/contact.md   | `permalink: /contact/` |
+| filename | permalink |
+| :--- | :--- |
+| \_pages/about.md | `permalink: /about/` |
+| \_pages/home.md | `permalink: /` |
+| \_pages/contact.md | `permalink: /contact/` |
 
 **Recommended Front Matter Defaults:**
 
@@ -41,3 +43,4 @@ defaults:
       layout: single
       author_profile: true
 ```
+

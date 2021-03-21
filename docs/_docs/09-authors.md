@@ -1,15 +1,17 @@
 ---
-title: "Authors"
+title: Authors
 permalink: /docs/authors/
-excerpt: "Instructions and settings for working with multiple site authors."
-last_modified_at: 2018-09-10T12:33:24-04:00
+excerpt: Instructions and settings for working with multiple site authors.
+last_modified_at: '2018-09-10T16:33:24.000Z'
 ---
+
+# 09-authors
 
 Sites that may have content authored from various individuals can be accommodated by using [data files](https://jekyllrb.com/docs/datafiles/).
 
 To assign an author to a post or page that is different from the site author specified in `_config.yml`:
 
-**Step 1.** Create `_data/authors.yml` and add authors using the following format. Any variables found under `author:` in `_config.yml` can be used (e.g. `name`, `bio`, `avatar`, author `links`, etc.).
+**Step 1.** Create `_data/authors.yml` and add authors using the following format. Any variables found under `author:` in `_config.yml` can be used \(e.g. `name`, `bio`, `avatar`, author `links`, etc.\).
 
 ```yaml
 # /_data/authors.yml
@@ -42,10 +44,11 @@ Cornelius Fiddlebone:
       url: "https://twitter.com/rhymeswithsackit"
 ```
 
-**Step 2.** Assign one of the authors in `authors.yml` to a post or page you wish to override the `site.author` with. 
+**Step 2.** Assign one of the authors in `authors.yml` to a post or page you wish to override the `site.author` with.
 
 Example: To assign `Billy Rick` as an author for a post the following YAML Front Matter would be applied:
 
 ```yaml
 author: Billy Rick
 ```
+

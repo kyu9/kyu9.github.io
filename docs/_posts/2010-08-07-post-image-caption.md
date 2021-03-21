@@ -1,5 +1,5 @@
 ---
-title: "Post: Image (Caption)"
+title: 'Post: Image (Caption)'
 categories:
   - Post Formats
 tags:
@@ -7,11 +7,9 @@ tags:
   - Post Formats
 ---
 
-{% capture fig_img %}
-![Foo]({{ "/assets/images/unsplash-gallery-image-3.jpg" | relative_url }})
-{% endcapture %}
+# 2010-08-07-post-image-caption
 
-<figure>
-  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-  <figcaption>Photo from Unsplash.</figcaption>
-</figure>
+ {{ fig\_img \| markdownify \| remove: "
+
+" \| remove: "" }}Photo from Unsplash.
+

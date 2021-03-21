@@ -1,12 +1,14 @@
 ---
-title: "Wide Single Layout Page"
+title: Wide Single Layout Page
 classes: wide
-excerpt: "A page with `classes: wide` set to expand the main content's width."
-tags: 
+excerpt: 'A page with `classes: wide` set to expand the main content''s width.'
+tags:
   - sample post
   - readability
   - test
 ---
+
+# 2012-05-22-markup-text-readability-wide-page
 
 When using `layout: single` add the following front matter to a page or post to widen the main content:
 
@@ -22,10 +24,10 @@ Vero laborum commodo occupy. Semiotics voluptate mumblecore pug. Cosby sweater u
 
 In pug Portland incididunt mlkshk put a bird on it vinyl quinoa. Terry Richardson shabby chic +1, scenester Tonx excepteur tempor fugiat voluptate fingerstache aliquip nisi next level. Farm-to-table hashtag Truffaut, Odd Future ex meggings gentrify single-origin coffee try-hard 90's.
 
-  * Sartorial hoodie
-  * Labore viral forage
-  * Tote bag selvage
-  * DIY exercitation et id ugh tumblr church-key
+* Sartorial hoodie
+* Labore viral forage
+* Tote bag selvage
+* DIY exercitation et id ugh tumblr church-key
 
 Incididunt umami sriracha, ethical fugiat VHS ex assumenda yr irure direct trade. Marfa Truffaut bicycle rights, kitsch placeat Etsy kogi asymmetrical. Beard locavore flexitarian, kitsch photo booth hoodie plaid ethical readymade leggings yr.
 
@@ -50,3 +52,4 @@ Fingerstache thundercats Williamsburg, deep v scenester Banksy ennui vinyl selfi
 Occupy et selvage squid, pug brunch blog nesciunt hashtag mumblecore skateboard yr kogi. Ugh small batch swag four loko. Fap post-ironic qui tote bag farm-to-table american apparel scenester keffiyeh vero, swag non pour-over gentrify authentic pitchfork. Schlitz scenester lo-fi voluptate, tote bag irony bicycle rights pariatur vero Vice freegan wayfarers exercitation nisi shoreditch. Chambray tofu vero sed. Street art swag literally leggings, Cosby sweater mixtape PBR lomo Banksy non in pitchfork ennui McSweeney's selfies. Odd Future Banksy non authentic.
 
 Aliquip enim artisan dolor post-ironic. Pug tote bag Marfa, deserunt pour-over Portland wolf eu odio intelligentsia american apparel ugh ea. Sunt viral et, 3 wolf moon gastropub pug id. Id fashion axe est typewriter, mlkshk Portland art party aute brunch. Sint pork belly Cosby sweater, deep v mumblecore kitsch american apparel. Try-hard direct trade tumblr sint skateboard. Adipisicing bitters excepteur biodiesel, pickled gastropub aute veniam.
+

@@ -1,5 +1,5 @@
 ---
-title: "Edge Case: Many Tags"
+title: 'Edge Case: Many Tags'
 categories:
   - Edge Case
 tags:
@@ -44,8 +44,11 @@ tags:
   - Unseen
   - video
   - YouTube
-  - U:R:COOL
-  - C#
+  - 'U:R:COOL'
+  - 'C#'
 ---
 
+# 2009-06-01-edge-case-many-tags
+
 This post has many tags.
+

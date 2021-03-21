@@ -1,5 +1,5 @@
 ---
-title: "Edge Case: Many Tags"
+title: 'Edge Case: Many Tags'
 categories:
   - Edge Case
 tags:
@@ -46,4 +46,7 @@ tags:
   - YouTube
 ---
 
+# 2009-06-01-edge-case-many-tags
+
 This post has many tags.
+

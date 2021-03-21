@@ -1,10 +1,12 @@
 ---
-title: "Stylesheets"
+title: Stylesheets
 permalink: /docs/stylesheets/
-excerpt: "Instructions for customizing and building the theme's stylesheets."
-last_modified_at: 2018-11-25T19:47:43-05:00
+excerpt: Instructions for customizing and building the theme's stylesheets.
+last_modified_at: '2018-11-26T00:47:43.000Z'
 toc: true
 ---
+
+# 16-stylesheets
 
 The theme's `assets/css/main.css` file is built from several SCSS partials located in [`_sass/`](https://github.com/mmistakes/minimal-mistakes/tree/master/_sass) and is structured as follows:
 
@@ -40,53 +42,48 @@ minimal-mistakes
 
 ## Customizing
 
-To override the default [Sass](http://sass-lang.com/guide) (located in theme's 
-`_sass` directory), do one of the following:
+To override the default [Sass](http://sass-lang.com/guide) \(located in theme's `_sass` directory\), do one of the following:
 
 1. Copy directly from the Minimal Mistakes theme gem
+   * Go to your local Minimal Mistakes gem installation directory \(run 
 
-   - Go to your local Minimal Mistakes gem installation directory (run 
-     `bundle show minimal-mistakes-jekyll` to get the path to it).
-   - Copy the contents of `/assets/css/main.scss` from there to 
+     `bundle show minimal-mistakes-jekyll` to get the path to it\).
+
+   * Copy the contents of `/assets/css/main.scss` from there to 
+
      `<your_project>`.
-   - Customize what you want inside `<your_project>/assets/css/main.scss`.
 
+   * Customize what you want inside `<your_project>/assets/css/main.scss`.
 2. Copy from this repo.
+   * Copy the contents of [assets/css/main.scss](https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss) 
 
-   - Copy the contents of [assets/css/main.scss](https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss) 
      to `<your_project>`.
-   - Customize what you want inside `<your_project/assets/css/main.scss`.
 
-**Note:** To make more extensive changes and customize the Sass partials bundled 
-in the gem. You will need to copy the complete contents of the `_sass` directory 
-to `<your_project>` due to the way Jekyll currently reads those files.
+   * Customize what you want inside `<your_project/assets/css/main.scss`.
 
-To make basic tweaks to theme's style Sass variables can be overridden by adding 
-to `<your_project>/assets/css/main.scss`. For instance, to change the 
-link color used throughout the theme add:
+**Note:** To make more extensive changes and customize the Sass partials bundled in the gem. You will need to copy the complete contents of the `_sass` directory to `<your_project>` due to the way Jekyll currently reads those files.
 
-```scss
+To make basic tweaks to theme's style Sass variables can be overridden by adding to `<your_project>/assets/css/main.scss`. For instance, to change the link color used throughout the theme add:
+
+```css
 $link-color: red;
 ```
 
 Before any `@import` lines.
 
-### Paragraph indention 
+### Paragraph indention
 
 To mimic the look of type set in a printed book or manuscript you may want to enable paragraph indention. When `$paragraph-indent` is set to `true` indents are added to each sibling and the margin below each paragraph is removed.
 
-<figure>
-  <img src="{{ '/assets/images/mm-paragraph-indent-example.jpg' | relative_url }}" alt="indented paragraph example">
-  <figcaption>Example of indented paragraphs.</figcaption>
-</figure>
+ ![indented paragraph example](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20%27/assets/images/mm-paragraph-indent-example.jpg%27%20%7C%20relative_url%20%7D%7D)Example of indented paragraphs.
 
 The size of the indent can also be customized by changing the value of `$indent-var`.
 
 ### Font stacks
 
-By default the theme uses [system fonts](https://medium.com/designing-medium/system-shock-6b1dc6d6596f#.rb81vgn7i) for all of the font stacks (serif, sans-serif, and monospace). This is done in part to provide a clean base for you to build off of and to improve performance since we aren't loading any custom webfonts by default.
+By default the theme uses [system fonts](https://medium.com/designing-medium/system-shock-6b1dc6d6596f#.rb81vgn7i) for all of the font stacks \(serif, sans-serif, and monospace\). This is done in part to provide a clean base for you to build off of and to improve performance since we aren't loading any custom webfonts by default.
 
-```scss
+```css
 /* system typefaces */
 $serif      : Georgia, Times, serif;
 $sans-serif : -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
@@ -95,8 +92,7 @@ $monospace  : Monaco, Consolas, "Lucida Console", monospace;
 
 Sans-serif fonts have been used for most of the type, with serifs reserved for captions. If you wish to change this you'll need to poke around the various `SCSS` partials and modify `font-family` declarations.
 
-**ProTip:** To use webfonts from services like [Adobe TypeKit](https://typekit.com/) or [Google Fonts](https://www.google.com/fonts) simply update the font stacks and then add their scripts to `_includes/head/custom.html`.
-{: .notice--info}
+**ProTip:** To use webfonts from services like [Adobe TypeKit](https://typekit.com/) or [Google Fonts](https://www.google.com/fonts) simply update the font stacks and then add their scripts to `_includes/head/custom.html`. {: .notice--info}
 
 #### Typography from older versions
 
@@ -104,13 +100,13 @@ Not a fan of the refreshed typography of the theme and want to revert back an ol
 
 **1.** Add this Google Fonts script to [`_includes/head/custom.html`](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/head/custom.html):
 
-```html
+```markup
 <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic" rel="stylesheet" type="text/css">
 ```
 
 **2.** Update the following SCSS variables:
 
-```scss
+```css
 $serif              : "PT Serif", Georgia, Times, serif;
 $sans-serif-narrow  : "PT Sans Narrow", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 
@@ -120,11 +116,11 @@ $header-font-family : $sans-serif-narrow;
 
 ### Type scale
 
-Wherever possible type scale variables have been used instead of writing out fixed sizes. This makes updating much easier by changing values in one file. 
+Wherever possible type scale variables have been used instead of writing out fixed sizes. This makes updating much easier by changing values in one file.
 
 Example:
 
-```scss
+```css
 .page__lead {
   font-family: $global-font-family;
   font-size: $type-size-4;
@@ -133,7 +129,7 @@ Example:
 
 Type sizes are set in ems to proportional scale as the screen size changes. Large headlines that look great on desktop monitors will shrink ever so slightly as to not be too big on mobile devices. To adjust this hierarchy simply edit the default values:
 
-```scss
+```css
 /* type scale */
 $type-size-1 : 2.441em;  // ~39.056px
 $type-size-2 : 1.953em;  // ~31.248px
@@ -151,15 +147,15 @@ Change the mood of your site by altering a few color variables. `$body-color`, `
 
 #### Syntax highlighting
 
-To make customizing the colors used in code highlighted blocks, a base of sixteen colors ([Base16](http://chriskempson.com/projects/base16/)) have been used.
+To make customizing the colors used in code highlighted blocks, a base of sixteen colors \([Base16](http://chriskempson.com/projects/base16/)\) have been used.
 
 Code block colors can easily be changed by overriding any of the following color variables:
 
-##### Default
+**Default**
 
-![default-code-block]({{ '/assets/images/default-code-block.jpg' | relative_url }})
+!\[default-code-block\]\(\)
 
-```scss
+```css
 /* default syntax highlighting (base16) */
 $base00: #263238;
 $base01: #2e3c43;
@@ -179,11 +175,11 @@ $base0e: #c792ea;
 $base0f: #ff5370;
 ```
 
-##### Solarized light
+**Solarized light**
 
-![solarized-light-code-block]({{ '/assets/images/solarized-light-code-block.jpg' | relative_url }})
+!\[solarized-light-code-block\]\(\)
 
-```scss
+```css
 /* solarized light syntax highlighting (base16) */
 $base00: #fafafa !default;
 $base01: #073642 !default;
@@ -203,11 +199,11 @@ $base0e: #6c71c4 !default;
 $base0f: #d33682 !default;
 ```
 
-##### Contrast
+**Contrast**
 
-![contrast-code-block]({{ '/assets/images/contrast-code-block.jpg' | relative_url }})
+!\[contrast-code-block\]\(\)
 
-```scss
+```css
 /* contrast syntax highlighting (base16) */
 $base00: #000000;
 $base01: #242422;
@@ -227,11 +223,11 @@ $base0e: #ff73fd;
 $base0f: #b18a3d;
 ```
 
-##### Dark
+**Dark**
 
-![dark-code-block]({{ '/assets/images/dark-code-block.jpg' | relative_url }})
+!\[dark-code-block\]\(\)
 
-```scss
+```css
 /* dark syntax highlighting (base16) */
 $base00: #ffffff;
 $base01: #e0e0e0;
@@ -251,11 +247,11 @@ $base0e: #ad00a1;
 $base0f: #cc6633;
 ```
 
-##### Dirt
+**Dirt**
 
-![dirt-code-block]({{ '/assets/images/dirt-code-block.jpg' | relative_url }})
+!\[dirt-code-block\]\(\)
 
-```scss
+```css
 /* dirt syntax highlighting (base16) */
 $base00: #231e18;
 $base01: #302b25;
@@ -275,11 +271,11 @@ $base0e: #bb90e2;
 $base0f: #b49368;
 ```
 
-##### Dracula
+**Dracula**
 
-![dracula-code-block]({{ '/assets/images/dracula-code-block.jpg' | relative_url }})
+!\[dracula-code-block\]\(\)
 
-```scss
+```css
 /* dracula syntax highlighting (base16) */
 /* https://github.com/dracula/base16-dracula-scheme */
 $base00: #282936;
@@ -300,11 +296,11 @@ $base0e: #b45bcf;
 $base0f: #00f769;
 ```
 
-##### Neon
+**Neon**
 
-![neon-code-block]({{ '/assets/images/neon-code-block.jpg' | relative_url }})
+!\[neon-code-block\]\(\)
 
-```scss
+```css
 /* neon syntax highlighting (base16) */
 $base00: #ffffff;
 $base01: #e0e0e0;
@@ -324,11 +320,11 @@ $base0e: #ad00a1;
 $base0f: #cc6633;
 ```
 
-##### Plum
+**Plum**
 
-![plum-code-block]({{ '/assets/images/plum-code-block.jpg' | relative_url }})
+!\[plum-code-block\]\(\)
 
-```scss
+```css
 /* plum syntax highlighting (base16) */
 $base00: #ffffff;
 $base01: #e0e0e0;
@@ -348,11 +344,11 @@ $base0e: #ad00a1;
 $base0f: #cc6633;
 ```
 
-##### Sunrise
+**Sunrise**
 
-![sunrise-code-block]({{ '/assets/images/sunrise-code-block.jpg' | relative_url }})
+!\[sunrise-code-block\]\(\)
 
-```scss
+```css
 /* sunrise syntax highlighting (base16) */
 $base00: #1d1f21;
 $base01: #282a2e;
@@ -370,7 +366,7 @@ $base0c: #8abeb7;
 $base0d: #81a2be;
 $base0e: #b294bb;
 $base0f: #a3685a;
-```  
+```
 
 ### Breakpoints and grid stuff
 
@@ -378,16 +374,14 @@ Probably won't need to touch these, but they're there if you need to. Width vari
 
 And `$susy` is used for setting [the grid](http://susy.oddbird.net/) the theme uses. Uncommenting the lines under `debug` can be useful if you want to show the columns when adjusting the layout.
 
-<figure>
-  <img src="{{ '/assets/images/mm-susy-grid-overlay.jpg' | relative_url }}" alt="Susy grid overlay for debugging">
-  <figcaption>Susy grid debug overlay enabled.</figcaption>
-</figure>
+ ![Susy grid overlay for debugging](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20%27/assets/images/mm-susy-grid-overlay.jpg%27%20%7C%20relative_url%20%7D%7D)Susy grid debug overlay enabled.
 
 ### Disabling animations
 
 You can disable either the fade-in intro animation, element transition animations, or both by overriding the corresponding variables. For example if you wanted to disable all animations you could include the following lines:
 
-```scss
+```css
 $intro-transition  : none;
 $global-transition : none;
 ```
+

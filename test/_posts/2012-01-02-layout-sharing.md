@@ -1,5 +1,5 @@
 ---
-title: "Layout: Social Sharing Links Enabled"
+title: 'Layout: Social Sharing Links Enabled'
 share: true
 categories:
   - Layout
@@ -9,4 +9,7 @@ tags:
   - layout
 ---
 
+# 2012-01-02-layout-sharing
+
 This post should display social sharing links.
+

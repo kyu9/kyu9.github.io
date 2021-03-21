@@ -7,4 +7,7 @@ entries_layout: grid
 classes: wide
 ---
 
+# portfolio-archive
+
 Sample document listing for the collection `_portfolio`.
+

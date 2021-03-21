@@ -1,14 +1,16 @@
 ---
-title: "Layout: Post with Table of Contents"
+title: 'Layout: Post with Table of Contents'
 header:
   image: assets/images/unsplash-image-9.jpg
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  caption: 'Photo credit: [**Unsplash**](https://unsplash.com)'
 tags:
   - table of contents
 toc: true
-toc_label: "Unique Title"
-toc_icon: "heart"
+toc_label: Unique Title
+toc_icon: heart
 ---
+
+# 2012-01-03-layout-table-of-contents-post
 
 Enable table of contents on post or page by adding `toc: true` to its YAML Front Matter. The title and icon can also be changed with:
 
@@ -28,10 +30,9 @@ Below is just about everything you'll need to style in the theme. Check the sour
 
 Lorem ipsum dolor sit amet, test link adipiscing elit. **This is strong**. Nullam dignissim convallis est. Quisque aliquam.
 
-![Smithsonian Image]({{ site.url }}{{ site.baseurl }}/assets/images/3953273590_704e3899d5_m.jpg)
-{: .image-right}
+![Smithsonian Image](https://github.com/kyu9/kyu9.github.io/tree/5c7a29a920f3e7a37b26ba9b5d143743cb67699b/docs/_posts/%7B%7B%20site.url%20%7D%7D%7B%7B%20site.baseurl%20%7D%7D/assets/images/3953273590_704e3899d5_m.jpg) {: .image-right}
 
-*This is emphasized*. Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is H2O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times (That’s a citation). Underline.Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
+_This is emphasized_. Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is H2O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times \(That’s a citation\). Underline.Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
 
 HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.
 
@@ -58,14 +59,15 @@ HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, c
 ## Tables
 
 | Header1 | Header2 | Header3 |
-|:--------|:-------:|--------:|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|----
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|=====
-| Foot1   | Foot2   | Foot3
+| :--- | :---: | ---: |
+| cell1 | cell2 | cell3 |
+| cell4 | cell5 | cell6 |
+| ---- |  |  |
+| cell1 | cell2 | cell3 |
+| cell4 | cell5 | cell6 |
+| ===== |  |  |
+| Foot1 | Foot2 | Foot3 |
+
 {: rules="groups"}
 
 ## Code Snippets
@@ -82,17 +84,13 @@ HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, c
 
 Make any link standout more when applying the `.btn` class.
 
-```html
+```markup
 <a href="#" class="btn btn--success">Success Button</a>
 ```
 
-<div markdown="0"><a href="#" class="btn">Primary Button</a></div>
-<div markdown="0"><a href="#" class="btn btn--success">Success Button</a></div>
-<div markdown="0"><a href="#" class="btn btn--warning">Warning Button</a></div>
-<div markdown="0"><a href="#" class="btn btn--danger">Danger Button</a></div>
-<div markdown="0"><a href="#" class="btn btn--info">Info Button</a></div>
+[Primary Button](2012-01-03-layout-table-of-contents-post.md)[Success Button](2012-01-03-layout-table-of-contents-post.md)[Warning Button](2012-01-03-layout-table-of-contents-post.md)[Danger Button](2012-01-03-layout-table-of-contents-post.md)[Info Button](2012-01-03-layout-table-of-contents-post.md)
 
 ## Notices
 
-**Watch out!** You can also add notices by appending `{: .notice}` to a paragraph.
-{: .notice}
+**Watch out!** You can also add notices by appending `{: .notice}` to a paragraph. {: .notice}
+

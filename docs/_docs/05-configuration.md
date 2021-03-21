@@ -1,15 +1,16 @@
 ---
-title: "Configuration"
+title: Configuration
 permalink: /docs/configuration/
-excerpt: "Settings for configuring and customizing the theme."
-last_modified_at: 2020-08-04T11:26:21-04:00
+excerpt: Settings for configuring and customizing the theme.
+last_modified_at: '2020-08-04T15:26:21.000Z'
 toc: true
 ---
 
+# 05-configuration
+
 Settings that affect your entire site can be changed in [Jekyll's configuration file](https://jekyllrb.com/docs/configuration/): `_config.yml`, found in the root of your project. If you don't have this file you'll need to copy or create one using the theme's [default `_config.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml) as a base.
 
-**Note:** for technical reasons, `_config.yml` is NOT reloaded automatically when used with `jekyll serve`. If you make any changes to this file, please restart the server process for them to be applied.
-{: .notice--warning}
+**Note:** for technical reasons, `_config.yml` is NOT reloaded automatically when used with `jekyll serve`. If you make any changes to this file, please restart the server process for them to be applied. {: .notice--warning}
 
 Take a moment to look over the configuration file included with the theme. Comments have been added to provide examples and default values for most settings. Detailed explanations of each can be found below.
 
@@ -31,95 +32,57 @@ Easily change the color scheme of the theme using one of the provided "skins":
 minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 ```
 
-**Note:** If you have made edits to the theme's CSS files be sure to update [`/assets/css/main.scss`](https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss) to include `@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin` before the `minimal-mistakes` import.
-{: .notice--warning}
+**Note:** If you have made edits to the theme's CSS files be sure to update [`/assets/css/main.scss`](https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss) to include `@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin` before the `minimal-mistakes` import. {: .notice--warning}
 
 #### Air skin: `air`
 
-{:.no_toc}
+{:.no\_toc}
 
-<figure class="half">
-    <a href="{{ site.baseurl }}/assets/images/air-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/air-skin-archive.png"></a>
-    <a href="{{ site.baseurl }}/assets/images/air-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/air-skin-post.png"></a>
-    <figcaption>Calm and blue.</figcaption>
-</figure>
+ [![](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/air-skin-archive.png)](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/air-skin-archive-large.png) [![](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/air-skin-post.png)](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/air-skin-post-large.png)Calm and blue.
 
 #### Aqua skin: `aqua`
 
-<figure class="half">
-  <a href="{{ site.baseurl }}/assets/images/aqua-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/aqua-skin-archive.png"></a>
-  <a href="{{ site.baseurl }}/assets/images/aqua-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/aqua-skin-post.png"></a>
-  <figcaption>Just like water.</figcaption>
-</figure>
+ [![](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/aqua-skin-archive.png)](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/aqua-skin-archive-large.png) [![](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/aqua-skin-post.png)](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/aqua-skin-post-large.png)Just like water.
 
 #### Contrast skin: `contrast`
 
-<figure class="half">
-  <a href="{{ site.baseurl }}/assets/images/contrast-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/contrast-skin-archive.png"></a>
-  <a href="{{ site.baseurl }}/assets/images/contrast-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/contrast-skin-post.png"></a>
-  <figcaption>Retro feel with bold blue links and inverted footer.</figcaption>
-</figure>
+ [![](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/contrast-skin-archive.png)](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/contrast-skin-archive-large.png) [![](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/contrast-skin-post.png)](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/contrast-skin-post-large.png)Retro feel with bold blue links and inverted footer.
 
 #### Dark skin: `dark`
 
-<figure class="half">
-  <a href="{{ site.baseurl }}/assets/images/dark-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/dark-skin-archive.png"></a>
-  <a href="{{ site.baseurl }}/assets/images/dark-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/dark-skin-post.png"></a>
-  <figcaption>Inverted palette, white text on a dark background.</figcaption>
-</figure>
+ [![](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/dark-skin-archive.png)](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/dark-skin-archive-large.png) [![](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/dark-skin-post.png)](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/dark-skin-post-large.png)Inverted palette, white text on a dark background.
 
 #### Dirt skin: `dirt`
 
-<figure class="half">
-  <a href="{{ site.baseurl }}/assets/images/dirt-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/dirt-skin-archive.png"></a>
-  <a href="{{ site.baseurl }}/assets/images/dirt-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/dirt-skin-post.png"></a>
-  <figcaption>Earthy tones.</figcaption>
-</figure>
+ [![](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/dirt-skin-archive.png)](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/dirt-skin-archive-large.png) [![](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/dirt-skin-post.png)](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/dirt-skin-post-large.png)Earthy tones.
 
 #### Mint skin: `mint`
 
-{:.no_toc}
+{:.no\_toc}
 
-<figure class="half">
-  <a href="{{ site.baseurl }}/assets/images/mint-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/mint-skin-archive.png"></a>
-  <a href="{{ site.baseurl }}/assets/images/mint-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/mint-skin-post.png"></a>
-  <figcaption>Minty fresh green.</figcaption>
-</figure>
+ [![](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/mint-skin-archive.png)](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/mint-skin-archive-large.png) [![](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/mint-skin-post.png)](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/mint-skin-post-large.png)Minty fresh green.
 
 #### Neon skin: `neon`
 
-<figure class="half">
-  <a href="{{ site.baseurl }}/assets/images/neon-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/neon-skin-archive.png"></a>
-  <a href="{{ site.baseurl }}/assets/images/neon-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/neon-skin-post.png"></a>
-  <figcaption>Inverted palette, white text on a dark background.</figcaption>
-</figure>
+ [![](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/neon-skin-archive.png)](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/neon-skin-archive-large.png) [![](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/neon-skin-post.png)](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/neon-skin-post-large.png)Inverted palette, white text on a dark background.
 
 #### Neon skin: `plum`
 
-<figure class="half">
-  <a href="{{ site.baseurl }}/assets/images/plum-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/plum-skin-archive.png"></a>
-  <a href="{{ site.baseurl }}/assets/images/plum-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/plum-skin-post.png"></a>
-  <figcaption>Purple reigns supreme.</figcaption>
-</figure>
+ [![](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/plum-skin-archive.png)](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/plum-skin-archive-large.png) [![](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/plum-skin-post.png)](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/plum-skin-post-large.png)Purple reigns supreme.
 
 #### Sunrise skin: `sunrise`
 
-<figure class="half">
-  <a href="{{ site.baseurl }}/assets/images/sunrise-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/sunrise-skin-archive.png"></a>
-  <a href="{{ site.baseurl }}/assets/images/sunrise-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/sunrise-skin-post.png"></a>
-  <figcaption>Oranges and red.</figcaption>
-</figure>
+ [![](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/sunrise-skin-archive.png)](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/sunrise-skin-archive-large.png) [![](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/sunrise-skin-post.png)](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20site.baseurl%20%7D%7D/assets/images/sunrise-skin-post-large.png)Oranges and red.
 
 ### Site locale
 
 `site.locale` is used to declare the primary language for each web page within the site.
 
-_Example:_ `locale: "en-US"` sets the `lang` attribute for the site to the _United States_ flavor of English, while `en-GB` would be for the `United Kingdom` style of English. Country codes are optional and the shorter variation `locale: "en"` is also acceptable. To find your language and country codes check this [reference table](<https://msdn.microsoft.com/en-us/library/ee825488(v=cs.20).aspx>).
+_Example:_ `locale: "en-US"` sets the `lang` attribute for the site to the _United States_ flavor of English, while `en-GB` would be for the `United Kingdom` style of English. Country codes are optional and the shorter variation `locale: "en"` is also acceptable. To find your language and country codes check this \[reference table\]\([https://msdn.microsoft.com/en-us/library/ee825488\(v=cs.20\).aspx](https://msdn.microsoft.com/en-us/library/ee825488%28v=cs.20%29.aspx)\).
 
-Properly setting the locale is important for associating localized text found in the [**UI Text**]({{ "/docs/ui-text/" | relative_url }}) data file. An improper match will cause parts of the UI to disappear (eg. button labels, section headings, etc).
+Properly setting the locale is important for associating localized text found in the \[**UI Text**\]\(\) data file. An improper match will cause parts of the UI to disappear \(eg. button labels, section headings, etc\).
 
-**Note:** The theme comes with localized text in English (`en`, `en-US`, `en-GB`). If you change `locale` in `_config.yml` to something else, most of the UI text will go blank. Be sure to add the corresponding locale key and translated text to `_data/ui-text.yml` to avoid this.
-{: .notice--warning}
+**Note:** The theme comes with localized text in English \(`en`, `en-US`, `en-GB`\). If you change `locale` in `_config.yml` to something else, most of the UI text will go blank. Be sure to add the corresponding locale key and translated text to `_data/ui-text.yml` to avoid this. {: .notice--warning}
 
 ### Site title
 
@@ -131,8 +94,7 @@ You also have the option of customizing the separation character used in SEO-fri
 
 _Example:_ `title_separator: "|"` would produce page titles like `Sample Page | My Awesome Site`.
 
-**Note:** Long site titles have been known to break the masthead layout. Avoid adding a long "tagline" to the title prevent this from happening eg. `My Awesome Site is the Best Because I Say So".
-{: .notice--warning}
+**Note:** Long site titles have been known to break the masthead layout. Avoid adding a long "tagline" to the title prevent this from happening eg. \`My Awesome Site is the Best Because I Say So". {: .notice--warning}
 
 ### Site subtitle
 
@@ -146,8 +108,7 @@ Used to assign a site author. Don't worry, you can override the site author with
 
 _Example:_ `name: "Michael Rose"`.
 
-**ProTip:** If you want to get crafty with your YAML you can use [anchors](http://www.yaml.org/spec/1.2/spec.html#id2785586) to reuse values. For example `foo: &var "My String"` allows you to reuse `"My String"` elsewhere in `_config.yml` like so... `bar: *var`. You'll see a few examples of this in the provided Jekyll config.
-{: .notice--info}
+**ProTip:** If you want to get crafty with your YAML you can use [anchors](http://www.yaml.org/spec/1.2/spec.html#id2785586) to reuse values. For example `foo: &var "My String"` allows you to reuse `"My String"` elsewhere in `_config.yml` like so... `bar: *var`. You'll see a few examples of this in the provided Jekyll config. {: .notice--info}
 
 ### Site description
 
@@ -161,19 +122,17 @@ The base hostname and protocol for your site. If you're hosting with GitHub Page
 
 GitHub Pages now [forces `https://` for new sites](https://help.github.com/articles/securing-your-github-pages-site-with-https/) so be mindful of that when setting your URL to avoid mixed-content warnings.
 
-**Note:** Jekyll 3.3 overrides this value with `url: http://localhost:4000` when running `jekyll serve` locally in development. If you want to avoid this behavior set `JEKYLL_ENV=production` to [force the environment](http://jekyllrb.com/docs/configuration/#specifying-a-jekyll-environment-at-build-time) to production.
-{: .notice--warning}
+**Note:** Jekyll 3.3 overrides this value with `url: http://localhost:4000` when running `jekyll serve` locally in development. If you want to avoid this behavior set `JEKYLL_ENV=production` to [force the environment](http://jekyllrb.com/docs/configuration/#specifying-a-jekyll-environment-at-build-time) to production. {: .notice--warning}
 
 ### Site base URL
 
-This little option causes all kinds of confusion in the Jekyll community. If you're not hosting your site as a GitHub Pages Project or in a subfolder (eg: `/blog`), then don't mess with it.
+This little option causes all kinds of confusion in the Jekyll community. If you're not hosting your site as a GitHub Pages Project or in a subfolder \(eg: `/blog`\), then don't mess with it.
 
-In the case of the Minimal Mistakes demo site it's hosted on GitHub at <https://mmistakes.github.io/minimal-mistakes>. To correctly set this base path I'd use `url: "https://mmistakes.github.io"` and `baseurl: "/minimal-mistakes"`.
+In the case of the Minimal Mistakes demo site it's hosted on GitHub at [https://mmistakes.github.io/minimal-mistakes](https://mmistakes.github.io/minimal-mistakes). To correctly set this base path I'd use `url: "https://mmistakes.github.io"` and `baseurl: "/minimal-mistakes"`.
 
 For more information on how to properly use `site.url` and `site.baseurl` as intended by the Jekyll maintainers, check [Parker Moore's post on the subject](https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/).
 
-**Note:** When using `baseurl` remember to include it as part of your path when testing your site locally. Values of `url:` and `baseurl: "/blog"` would make your local site visible at `http://localhost:4000/blog` and not `http://localhost:4000`.
-{: .notice--warning}
+**Note:** When using `baseurl` remember to include it as part of your path when testing your site locally. Values of `url:` and `baseurl: "/blog"` would make your local site visible at `http://localhost:4000/blog` and not `http://localhost:4000`. {: .notice--warning}
 
 ### Site repository
 
@@ -189,8 +148,7 @@ Your `site.github.*` fields should fill in like normal. If you run Jekyll with t
 
 If you don't set `repository` correctly you may see the following error when trying to `serve` or `build` your Jekyll site:
 
-**Liquid Exceptions:** No repo name found. Specify using `PAGES_REPO_NWO` environment variables, `repository` in your configuration, or set up `origin` git remote pointing to your github.com repository.
-{: .notice--danger}
+**Liquid Exceptions:** No repo name found. Specify using `PAGES_REPO_NWO` environment variables, `repository` in your configuration, or set up `origin` git remote pointing to your github.com repository. {: .notice--danger}
 
 For more information on how `site.github` data can be used with Jekyll check out [`github-metadata`'s documentation](https://github.com/jekyll/github-metadata).
 
@@ -206,8 +164,9 @@ head_scripts:
   - /assets/js/your-custom-head-script.js
 ```
 
-Consult the [JavaScript documentation]({{ site.baseurl }}{% link _docs/17-javascript.md %}) for more information on working with theme scripts.
-{: .notice--info}
+Consult the \[JavaScript documentation\]\(
+
+\) for more information on working with theme scripts. {: .notice--info}
 
 ### Site default teaser image
 
@@ -224,10 +183,7 @@ header:
   teaser: /assets/images/my-awesome-post-teaser.jpg
 ```
 
-<figure>
-  <img src="{{ '/assets/images/mm-teaser-images-example.jpg' | relative_url }}" alt="teaser image example">
-  <figcaption>Example of teaser images found in the related posts module.</figcaption>
-</figure>
+ ![teaser image example](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20%27/assets/images/mm-teaser-images-example.jpg%27%20%7C%20relative_url%20%7D%7D)Example of teaser images found in the related posts module.
 
 ### Site masthead logo
 
@@ -237,10 +193,7 @@ To insert a logo before the site title, place a graphic in the `/assets/images/`
 logo: "/assets/images/88x88.png"
 ```
 
-<figure>
-  <img src="{{ '/assets/images/mm-masthead-logo.png' | relative_url }}" alt="masthead with logo and custom title">
-  <figcaption>Example of masthead with logo and custom title.</figcaption>
-</figure>
+ ![masthead with logo and custom title](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20%27/assets/images/mm-masthead-logo.png%27%20%7C%20relative_url%20%7D%7D)Example of masthead with logo and custom title.
 
 ### Site masthead title
 
@@ -250,26 +203,26 @@ By default your site title is used in the masthead. You can override this text b
 masthead_title: "My Custom Title"
 ```
 
-### Breadcrumb navigation (beta)
+### Breadcrumb navigation \(beta\)
 
 Enable breadcrumb links to help visitors better navigate deep sites. Because of the fragile method of implementing them they don't always produce accurate links reliably. For best results:
 
 1. Use a category based permalink structure e.g. `permalink: /:categories/:title/`
-2. Manually create pages for each category or use a plugin like [jekyll-archives][jekyll-archives] to auto-generate them. If these pages don't exist breadcrumb links to them will be broken.
+2. Manually create pages for each category or use a plugin like [jekyll-archives](https://github.com/jekyll/jekyll-archives) to auto-generate them. If these pages don't exist breadcrumb links to them will be broken.
 
-![breadcrumb navigation example]({{ "/assets/images/mm-breadcrumbs-example.jpg" | relative_url }})
+!\[breadcrumb navigation example\]\(\)
 
 ```yaml
 breadcrumbs: true  # disabled by default
 ```
 
-Breadcrumb start link text and separator character can both be changed in the [UI Text data file]({{ "/docs/ui-text/" | relative_url }}).
+Breadcrumb start link text and separator character can both be changed in the \[UI Text data file\]\(\).
 
 ### Post dates
 
 Enable post date snippets with `show_date: true` in YAML Front Matter.
 
-![post date example]({{ "/assets/images/mm-post-date-example.png" | relative_url }})
+!\[post date example\]\(\)
 
 Instead of adding `show_date: true` to each post, apply as a default in `_config.yml` like so:
 
@@ -289,7 +242,7 @@ To disable post date for a post, add `show_date: false` to its YAML Front Matter
 
 Enable estimated reading time snippets with `read_time: true` in YAML Front Matter. `200` has been set as the default words per minute value --- which can be changed by adjusting `words_per_minute:` in `_config.yml`.
 
-![reading time example]({{ "/assets/images/mm-read-time-example.jpg" | relative_url }})
+!\[reading time example\]\(\)
 
 Instead of adding `read_time: true` to each post, apply as a default in `_config.yml` like so:
 
@@ -313,7 +266,7 @@ words_per_minute: 250
 
 ### Page meta separator
 
-To customise the separator between the page date and reading time (if both are enabled), edit `.page__meta-sep::before` in a [custom stylesheet]({{ "/docs/stylesheets/" | relative_url }}).
+To customise the separator between the page date and reading time \(if both are enabled\), edit `.page__meta-sep::before` in a \[custom stylesheet\]\(\).
 
 For example,
 
@@ -329,15 +282,15 @@ For example,
 
 [**Disqus**](https://disqus.com/), [**Discourse**](https://www.discourse.org/), [**Facebook**](https://developers.facebook.com/docs/plugins/comments), [**utterances**](https://utteranc.es/), and static-based commenting via [**Staticman**](https://staticman.net/) are built into the theme. First set the comment provider you'd like to use:
 
-| Name             | Comment Provider          |
-| ---------------- | ------------------------- |
-| **disqus**       | Disqus                    |
-| **discourse**    | Discourse                 |
-| **facebook**     | Facebook Comments         |
-| **staticman_v2** | Staticman v2              |
-| **staticman**    | Staticman v1 (deprecated) |
-| **utterances**   | utterances                |
-| **custom**       | Other                     |
+| Name | Comment Provider |
+| :--- | :--- |
+| **disqus** | Disqus |
+| **discourse** | Discourse |
+| **facebook** | Facebook Comments |
+| **staticman\_v2** | Staticman v2 |
+| **staticman** | Staticman v1 \(deprecated\) |
+| **utterances** | utterances |
+| **custom** | Other |
 
 Then add `comments: true` to each document you want comments visible on.
 
@@ -355,9 +308,7 @@ defaults:
 
 If you add `comments: false` to a post's YAML Front Matter it will override the default and disable comments for just that post.
 
-**Note:** Comments are disabled by default in `development`. To enable when testing/building locally be sure to set
-`JEKYLL_ENV=production` to [force the environment](http://jekyllrb.com/docs/configuration/#specifying-a-jekyll-environment-at-build-time) to production.
-{: .notice--info}
+**Note:** Comments are disabled by default in `development`. To enable when testing/building locally be sure to set `JEKYLL_ENV=production` to [force the environment](http://jekyllrb.com/docs/configuration/#specifying-a-jekyll-environment-at-build-time) to production. {: .notice--info}
 
 #### Disqus
 
@@ -381,8 +332,7 @@ comments:
     server: # meta.discourse.org
 ```
 
-**Note:** Do not include `http://` or `https://` when setting your Discourse `server`. The theme automatically prepends the URL `//`, following a scheme-less pattern.
-{: .notice--info}
+**Note:** Do not include `http://` or `https://` when setting your Discourse `server`. The theme automatically prepends the URL `//`, following a scheme-less pattern. {: .notice--info}
 
 #### Facebook comments
 
@@ -405,8 +355,7 @@ To use utterances you will need to [install the app](https://github.com/apps/utt
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 ```
 
-**Note:** Make sure the repo is public, otherwise your readers will not be able to view the issues/comments. The [issues feature](https://guides.github.com/features/issues/) also needs to be active on your repo.
-{: .notice--warning}
+**Note:** Make sure the repo is public, otherwise your readers will not be able to view the issues/comments. The [issues feature](https://guides.github.com/features/issues/) also needs to be active on your repo. {: .notice--warning}
 
 To enable utterances on the front end set `comments.provider` and the color theme of the widget.
 
@@ -422,24 +371,24 @@ comments:
 
 Transform user comments into `_data` files that live inside of your GitHub repository by enabling Staticman.
 
-**Note:** Looking to migrate comments from a WordPress based site? Give [this tool](https://github.com/arthurlacoste/wordpress-comments-jekyll-staticman) a try.
-{: .notice--info}
+**Note:** Looking to migrate comments from a WordPress based site? Give [this tool](https://github.com/arthurlacoste/wordpress-comments-jekyll-staticman) a try. {: .notice--info}
 
-**Note:** Please note that as of September 2018, Staticman is reaching GitHub API limits due to its popularity, and it is recommended by its maintainer that users deploy their own instances for production (use `site.staticman.endpoint`).
-{: .notice--warning}
+**Note:** Please note that as of September 2018, Staticman is reaching GitHub API limits due to its popularity, and it is recommended by its maintainer that users deploy their own instances for production \(use `site.staticman.endpoint`\). {: .notice--warning}
 
-##### Add Staticman as a collaborator
+**Add Staticman as a collaborator**
 
 1. Allow Staticman push access to your GitHub repository by clicking on **Settings**, then the **Collaborators** tab and adding `staticmanapp` as a collaborator.
 2. To accept the pending invitation visit: `https://api.staticman.net/v2/connect/{your GitHub username}/{your repository name}`. Consult the Staticman "[Get Started](https://staticman.net/docs/index.html)" guide for more info.
 
-##### Configure Staticman
+**Configure Staticman**
 
-###### Staticman v3
+**Staticman v3**
 
-Due to the [support for GitLab](https://github.com/eduardoboucas/staticman/pull/219), the URL scheme has been changed.  Between `v3/entry/` and `/{your Git username}`, one needs to input a Git service provider (either `github` or `gitlab`).  For example
+Due to the [support for GitLab](https://github.com/eduardoboucas/staticman/pull/219), the URL scheme has been changed. Between `v3/entry/` and `/{your Git username}`, one needs to input a Git service provider \(either `github` or `gitlab`\). For example
 
-    https://{your Staticman v3 API}/v3/entry/github/{your Git username}/{your repository name}/...
+```text
+https://{your Staticman v3 API}/v3/entry/github/{your Git username}/{your repository name}/...
+```
 
 ```yaml
 # _config.yml (defaults)
@@ -451,7 +400,7 @@ comments:
     endpoint  : https://{your Staticman v3 API}/v3/entry/github/
 ```
 
-###### Staticman v2
+**Staticman v2**
 
 Default settings have been provided in [`staticman.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/staticman.yml) and are commented to guide you through setup. View the [full list of configurations](https://staticman.net/docs/configuration).
 
@@ -486,13 +435,11 @@ comments:
     branch    : "master"
 ```
 
-**Branch setting:** This is the branch comment files will be sent to via pull requests. If you host your site on GitHub Pages it will likely be `master` unless your repo is setup as a project --- use `gh-pages` in that case.
-{: .notice--info}
+**Branch setting:** This is the branch comment files will be sent to via pull requests. If you host your site on GitHub Pages it will likely be `master` unless your repo is setup as a project --- use `gh-pages` in that case. {: .notice--info}
 
-**Note:** Staticman is currently compatible with GitHub and GitLab based repositories. [Support for GitLab Pages](https://github.com/eduardoboucas/staticman/issues/22) is already available at [Staticman v3](https://github.com/eduardoboucas/staticman/pull/219).
-{: .notice--warning}
+**Note:** Staticman is currently compatible with GitHub and GitLab based repositories. [Support for GitLab Pages](https://github.com/eduardoboucas/staticman/issues/22) is already available at [Staticman v3](https://github.com/eduardoboucas/staticman/pull/219). {: .notice--warning}
 
-###### Staticman v1 (deprecated)
+**Staticman v1 \(deprecated\)**
 
 Default settings have been provided in `_config.yml`. The important ones to set are `provider: "staticman"`, `branch`, and `path`. View the [full list of configurations](https://staticman.net/docs/configuration).
 
@@ -518,18 +465,17 @@ staticman:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 ```
 
-##### Comment moderation
+**Comment moderation**
 
-By default comment moderation is enabled in `staticman.yml`. As new comments are submitted Staticman will send a pull request. Merging these in will approve the comment, close the issue, and automatically rebuild your site (if hosted on GitHub Pages).
+By default comment moderation is enabled in `staticman.yml`. As new comments are submitted Staticman will send a pull request. Merging these in will approve the comment, close the issue, and automatically rebuild your site \(if hosted on GitHub Pages\).
 
 To skip this moderation step simply set `moderation: false`.
 
-**ProTip:** Create a GitHub webhook that sends a `POST` request to the following payload URL `https://api.staticman.net/v2/webhook` and triggers a "Pull request" event to delete Staticman branches on merge.
-{: .notice--info}
+**ProTip:** Create a GitHub webhook that sends a `POST` request to the following payload URL `https://api.staticman.net/v2/webhook` and triggers a "Pull request" event to delete Staticman branches on merge. {: .notice--info}
 
-![pull-request webhook]({{ "/assets/images/mm-staticman-pr-webhook.jpg" | relative_url }})
+!\[pull-request webhook\]\(\)
 
-##### reCAPTCHA support (v2 only)
+**reCAPTCHA support \(v2 only\)**
 
 To enable Google's reCAPTCHA to aid in spam detection you'll need to:
 
@@ -556,25 +502,23 @@ atom_feed:
   path: "http://feeds.feedburner.com/youFeedname"
 ```
 
-**Note:** By default the site feed is linked in two locations: inside the [`<head>` element](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/head.html) and at the bottom of every page in the [site footer](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/footer.html).
-{: .notice--info}
+**Note:** By default the site feed is linked in two locations: inside the [`<head>` element](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/head.html) and at the bottom of every page in the [site footer](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/footer.html). {: .notice--info}
 
 ### Site search
 
 To enable site-wide search add `search: true` to your `_config.yml`.
 
-![masthead search example]({{ "/assets/images/masthead-search.gif" | relative_url }})
+!\[masthead search example\]\(\)
 
-#### Lunr (default)
+#### Lunr \(default\)
 
 The default search uses [**Lunr**](https://lunrjs.com/) to build a search index of all post and your documents in collections. This method is 100% compatible with sites hosted on GitHub Pages.
 
-**Note:** Only the first 50 words of a post or page's body content is added to the Lunr search index. Setting `search_full_content` to `true` in your `_config.yml` will override this and could impact page load performance.
-{: .notice--warning}
+**Note:** Only the first 50 words of a post or page's body content is added to the Lunr search index. Setting `search_full_content` to `true` in your `_config.yml` will override this and could impact page load performance. {: .notice--warning}
 
 #### Algolia
 
-For faster and more relevant search ([see demo](https://mmistakes.github.io/minimal-mistakes-algolia-search/)):
+For faster and more relevant search \([see demo](https://mmistakes.github.io/minimal-mistakes-algolia-search/)\):
 
 1. Add the [`jekyll-algolia`](https://github.com/algolia/jekyll-algolia) gem to your `Gemfile`, in the `:jekyll_plugins` section.
 
@@ -597,7 +541,7 @@ For faster and more relevant search ([see demo](https://mmistakes.github.io/mini
    search_provider: algolia
    ```
 
-3. Add the following Algolia credentials to your `_config.yml` file. *If you don't have an Algolia account, you can open a free [Community plan](https://www.algolia.com/users/sign_up/hacker). Once signed in, you can grab your credentials from [your dashboard](https://www.algolia.com/licensing).*
+3. Add the following Algolia credentials to your `_config.yml` file. _If you don't have an Algolia account, you can open a free_ [_Community plan_](https://www.algolia.com/users/sign_up/hacker)_. Once signed in, you can grab your credentials from_ [_your dashboard_](https://www.algolia.com/licensing)_._
 
    ```yaml
    algolia:
@@ -609,13 +553,13 @@ For faster and more relevant search ([see demo](https://mmistakes.github.io/mini
 
 4. Once your credentials are setup, you can run the indexing with the following command:
 
-   ```
+   ```text
    ALGOLIA_API_KEY=your_admin_api_key bundle exec jekyll algolia
    ```
 
    For Windows users you will have to use `set` to assigned the `ALGOLIA_API_KEY` environment variable.
 
-   ```
+   ```text
    set ALGOLIA_API_KEY=your_admin_api_key
    bundle exec jekyll algolia
    ```
@@ -624,21 +568,18 @@ For faster and more relevant search ([see demo](https://mmistakes.github.io/mini
 
 To use the Algolia search with GitHub Pages hosted sites follow [this deployment guide](https://community.algolia.com/jekyll-algolia/github-pages.html). Or this guide for [deploying on Netlify](https://community.algolia.com/jekyll-algolia/netlify.html).
 
-**Note:** The Jekyll Algolia plugin can be configured in several ways. Be sure to check out [their full documentation](https://community.algolia.com/jekyll-algolia/options.html "Algolia configuration") on how to exclude files and other valuable settings.
-{: .notice--info}
+**Note:** The Jekyll Algolia plugin can be configured in several ways. Be sure to check out [their full documentation](https://community.algolia.com/jekyll-algolia/options.html) on how to exclude files and other valuable settings. {: .notice--info}
 
 #### Google Custom Search Engine
 
 Add a Google search box to your site.
 
 1. Create a **New search engine** in [Google Custom Search Engine](https://cse.google.com/cse/all), give it an appropriate name and setup "Sites to search" to your liking.
+2. Under **Look and feel** choose the "Results only" layout and a theme \(_Minimalist_ is a good choice to match the default look of the Minimal Mistakes\).
 
-2. Under **Look and feel** choose the "Results only" layout and a theme (*Minimalist* is a good choice to match the default look of the Minimal Mistakes).
-
-   ![Google Custom Search Engine layout]({{ '/assets/images/google-custom-search-engine-layout.png' | relative_url }})
+   !\[Google Custom Search Engine layout\]\(\)
 
 3. Select "Save & Get Code" and grab your search engine ID from the line that begins with `var cx = 'YOUR_SEARCH_ENGINE_ID'`.
-
 4. Add your search engine ID to `_config.yml` like so:
 
    ```yaml
@@ -646,8 +587,7 @@ Add a Google search box to your site.
      search_engine_id: YOUR_SEARCH_ENGINE_ID
    ```
 
-**Note:** If your site is new and hasn't been indexed by Google yet, search will be incomplete and won't provide accurate results.
-{: .notice--info}
+**Note:** If your site is new and hasn't been indexed by Google yet, search will be incomplete and won't provide accurate results. {: .notice--info}
 
 ### SEO, social sharing, and analytics settings
 
@@ -657,8 +597,7 @@ All optional, but a good idea to take the time setting up to improve SEO and lin
 
 Formerly known as [Google Webmaster Tools](https://www.google.com/webmasters/tools/), add your [verification code](https://support.google.com/analytics/answer/1142414?hl=en) like so: `google_site_verification: "yourVerificationCode"`.
 
-**Note:** You likely won't have to do this if you verify site ownership through **Google Analytics** instead.
-{: .notice--warning}
+**Note:** You likely won't have to do this if you verify site ownership through **Google Analytics** instead. {: .notice--warning}
 
 #### Bing Webmaster Tools
 
@@ -666,7 +605,7 @@ There are several ways to [verify site ownership](https://www.bing.com/webmaster
 
 Copy and paste the string inside of `content`:
 
-```html
+```markup
 <meta name="msvalidate.01" content="0FC3FD70512616B052E755A56F8952D" />
 ```
 
@@ -682,7 +621,7 @@ To verify site ownership you will need to [create a Naver account](https://nid.n
 
 Much like Google and Bing you'll be provided with a meta description:
 
-```html
+```markup
 <meta name="naver-site-verification" content="6BF5A01C0E650B479B612AC5A2184144">`
 ```
 
@@ -696,7 +635,7 @@ naver_site_verification: "6BF5A01C0E650B479B612AC5A2184144"
 
 To verify site ownership copy and paste the string inside of `content`:
 
-```html
+```markup
 <meta name='yandex-verification' content='2132801JL' />
 ```
 
@@ -710,7 +649,7 @@ yandex_site_verification: "2132801JL"
 
 To improve the appearance of links shared from your site to social networks like Twitter and Facebook be sure to configure the following.
 
-##### Site Twitter username
+**Site Twitter username**
 
 Twitter username for the site. For pages that have custom author Twitter accounts assigned in their YAML Front Matter or data file, they will be attributed as a **creator** in the Twitter Card.
 
@@ -723,10 +662,9 @@ twitter:
 
 And if I assign `@mmistakes` as an author account it will appear in the Twitter Card along with `@mmistakes-theme`, attributed as a creator of the page being shared.
 
-**Note**: You need to validate cards are working and have Twitter [approve Player Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/player-card) before they will begin showing up.
-{: .notice--warning}
+**Note**: You need to validate cards are working and have Twitter [approve Player Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/player-card) before they will begin showing up. {: .notice--warning}
 
-##### Facebook Open Graph
+**Facebook Open Graph**
 
 If you have a Facebook ID or publisher page add them:
 
@@ -743,10 +681,9 @@ facebook:
   username: "michaelrose"  # https://www.facebook.com/michaelrose
 ```
 
-**ProTip:** To debug Open Graph data use [this tool](https://developers.facebook.com/tools/debug/og/object?q=https%3A%2F%2Fmademistakes.com) to test your pages. If content changes aren't reflected you will probably have to hit the **Fetch new scrape information** button to refresh.
-{: .notice--info}
+**ProTip:** To debug Open Graph data use [this tool](https://developers.facebook.com/tools/debug/og/object?q=https%3A%2F%2Fmademistakes.com) to test your pages. If content changes aren't reflected you will probably have to hit the **Fetch new scrape information** button to refresh. {: .notice--info}
 
-##### Open Graph default image
+**Open Graph default image**
 
 For pages that don't have a `header.image` assigned in their YAML Front Matter, `site.og_image` will be used as a fallback. Use your logo, icon, avatar or something else that is meaningful. Just make sure it is place in the `/assets/images/` folder, a minimum size of 120px by 120px, and less than 1MB in file size.
 
@@ -754,24 +691,15 @@ For pages that don't have a `header.image` assigned in their YAML Front Matter, 
 og_image: /assets/images/site-logo.png
 ```
 
-<figure>
-  <img src="{{ '/assets/images/mm-twitter-card-summary-image.jpg' | relative_url }}" alt="Twitter Card summary example">
-  <figcaption>Example of a image placed in a Summary Card.</figcaption>
-</figure>
+ ![Twitter Card summary example](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20%27/assets/images/mm-twitter-card-summary-image.jpg%27%20%7C%20relative_url%20%7D%7D)Example of a image placed in a Summary Card.
 
 Documents who have a `header.image` assigned in their YAML Front Matter will appear like this when shared on Twitter and Facebook.
 
-<figure>
-  <img src="{{ '/assets/images/mm-twitter-card-summary-large.jpg' | relative_url }}" alt="page shared on Twitter">
-  <figcaption>Shared page on Twitter with header image assigned.</figcaption>
-</figure>
+ ![page shared on Twitter](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20%27/assets/images/mm-twitter-card-summary-large.jpg%27%20%7C%20relative_url%20%7D%7D)Shared page on Twitter with header image assigned.
 
-<figure>
-  <img src="{{ '/assets/images/facebook-share-example.jpg' | relative_url }}" alt="page shared on Facebook">
-  <figcaption>Shared page on Facebook with header image assigned.</figcaption>
-</figure>
+ ![page shared on Facebook](https://github.com/kyu9/kyu9.github.io/tree/01081fee672617b1fd167098cd49967ec08cf27b/docs/_docs/%7B%7B%20%27/assets/images/facebook-share-example.jpg%27%20%7C%20relative_url%20%7D%7D)Shared page on Facebook with header image assigned.
 
-##### Include your social profile in search results
+**Include your social profile in search results**
 
 Use markup on your official website to add your [social profile information](https://developers.google.com/structured-data/customize/social-profiles#adding_structured_markup_to_your_site) to the Google Knowledge panel in some searches. Knowledge panels can prominently display your social profile information.
 
@@ -790,12 +718,12 @@ social:
 
 Analytics is disabled by default. To enable globally select one of the following:
 
-| Name                 | Analytics Provider                                              |
-| -------------------- | --------------------------------------------------------------- |
-| **google**           | [Google Standard Analytics](https://www.google.com/analytics/)  |
+| Name | Analytics Provider |
+| :--- | :--- |
+| **google** | [Google Standard Analytics](https://www.google.com/analytics/) |
 | **google-universal** | [Google Universal Analytics](https://www.google.com/analytics/) |
-| **google-gtag**      | [Google Analytics Global Site Tag](https://www.google.com/analytics/) |
-| **custom**           | Other analytics providers                                       |
+| **google-gtag** | [Google Analytics Global Site Tag](https://www.google.com/analytics/) |
+| **custom** | Other analytics providers |
 
 For Google Analytics add your Tracking Code:
 
@@ -809,18 +737,15 @@ analytics:
 
 To use another provider not included with the theme set `provider: "custom"` then add their embed code to `_includes/analytics-providers/custom.html`.
 
-**Note:** Analytics are disabled by default in `development`. To enable when testing/building locally be sure to set
-`JEKYLL_ENV=production` to [force the environment](http://jekyllrb.com/docs/configuration/#specifying-a-jekyll-environment-at-build-time) to production.
-{: .notice--info}
+**Note:** Analytics are disabled by default in `development`. To enable when testing/building locally be sure to set `JEKYLL_ENV=production` to [force the environment](http://jekyllrb.com/docs/configuration/#specifying-a-jekyll-environment-at-build-time) to production. {: .notice--info}
 
 ## Site author
 
 Used as the defaults for defining what appears in the author sidebar.
 
-![author sidebar example]({{ "/assets/images/mm-author-sidebar-example.jpg" | relative_url }})
+!\[author sidebar example\]\(\)
 
-**Note:** For sites with multiple authors these values can be overridden post by post with custom YAML Front Matter and a data file. For more information on how that works see below.
-{: .notice--info}
+**Note:** For sites with multiple authors these values can be overridden post by post with custom YAML Front Matter and a data file. For more information on how that works see below. {: .notice--info}
 
 ```yaml
 author:
@@ -833,10 +758,10 @@ author:
 Author links are all optional, include the ones you want visible under the `author.links` array.
 
 | Name | Description |
-| --- | --- |
-| **label** | Link label (e.g. `"Twitter"`) |
-| **icon** | [Font Awesome icon](https://fontawesome.com/icons?d=gallery) classes (e.g. `"fab fa-fw fa-twitter-square"`) |
-| **url** | Link URL (e.g. `"https://twitter.com/mmistakes"`) |
+| :--- | :--- |
+| **label** | Link label \(e.g. `"Twitter"`\) |
+| **icon** | [Font Awesome icon](https://fontawesome.com/icons?d=gallery) classes \(e.g. `"fab fa-fw fa-twitter-square"`\) |
+| **url** | Link URL \(e.g. `"https://twitter.com/mmistakes"`\) |
 
 ```yaml
 author:
@@ -859,17 +784,17 @@ author:
       url: "https://instagram.com/mmistakes"
 ```
 
-To customize the author sidebar, read the full [layout documentation]({{ "/docs/layouts/#author-profile" | relative_url }}).
+To customize the author sidebar, read the full \[layout documentation\]\(\).
 
 ## Site footer
 
 Footer links can be added under the `footer.links` array.
 
 | Name | Description |
-| --- | --- |
-| **label** | Link label (e.g. `"Twitter"`) |
-| **icon** | [Font Awesome icon](https://fontawesome.com/icons?d=gallery) classes (e.g. `"fab fa-fw fa-twitter-square"`) |
-| **url** | Link URL (e.g. `"https://twitter.com/mmistakes"`) |
+| :--- | :--- |
+| **label** | Link label \(e.g. `"Twitter"`\) |
+| **icon** | [Font Awesome icon](https://fontawesome.com/icons?d=gallery) classes \(e.g. `"fab fa-fw fa-twitter-square"`\) |
+| **url** | Link URL \(e.g. `"https://twitter.com/mmistakes"`\) |
 
 ```yaml
 footer:
@@ -885,8 +810,7 @@ footer:
       url: "https://instagram.com/mmistakes"
 ```
 
-**Note:** Twitter and Facebook footer links no longer automatically pull from `site.twitter.username` and `site.facebook.username`. This behavior has been deprecated in favor of the `footer.links` array above.
-{: .notice--danger}
+**Note:** Twitter and Facebook footer links no longer automatically pull from `site.twitter.username` and `site.facebook.username`. This behavior has been deprecated in favor of the `footer.links` array above. {: .notice--danger}
 
 To change "Follow:" text that precedes footer links, edit the `follow_label` key in `_data/ui-text.yml`.
 
@@ -949,8 +873,7 @@ And of course any default value can be overridden by settings in a post, page, o
 
 The default permalink style used by the theme is `permalink: /:categories/:title/`. If you have a post named `2016-01-01-my-post.md` with `categories: foo` in the YAML Front Matter, Jekyll will generate `_site/foo/my-post/index.html`.
 
-**Note:** If you plan on enabling breadcrumb links --- including category names in permalinks is a big part of how those are created.
-{: .notice--warning}
+**Note:** If you plan on enabling breadcrumb links --- including category names in permalinks is a big part of how those are created. {: .notice--warning}
 
 ### Paginate
 
@@ -960,7 +883,7 @@ If [using pagination](https://github.com/jekyll/jekyll-paginate) on the homepage
 paginate: 5
 ```
 
-You'll also need to include some Liquid and HTML to properly use the paginator, which you can find in the **Layouts** section under [Home Page]({{ "/docs/layouts/#home-page" | relative_url }}).
+You'll also need to include some Liquid and HTML to properly use the paginator, which you can find in the **Layouts** section under \[Home Page\]\(\).
 
 The paginator only works on files with name `index.html`. To use pagination in a subfolder --- for example `/recent/`, create `/recent/index.html` and set the `paginate_path` in `_config.yml` to this:
 
@@ -968,8 +891,7 @@ The paginator only works on files with name `index.html`. To use pagination in a
 paginate_path: /recent/page:num/
 ```
 
-**Please note:** When using Jekyll's default [pagination plugin](https://jekyllrb.com/docs/pagination/) `paginator.posts` can only be called once. If you're looking for something more powerful that can paginate category, tag, and collection pages I suggest [**jekyll-paginate-v2**](https://github.com/sverrirs/jekyll-paginate-v2).
-{: .notice--info}
+**Please note:** When using Jekyll's default [pagination plugin](https://jekyllrb.com/docs/pagination/) `paginator.posts` can only be called once. If you're looking for something more powerful that can paginate category, tag, and collection pages I suggest [**jekyll-paginate-v2**](https://github.com/sverrirs/jekyll-paginate-v2). {: .notice--info}
 
 ### Timezone
 
@@ -983,35 +905,25 @@ timezone: America/New_York
 
 When hosting with GitHub Pages a small [set of gems](https://pages.github.com/versions/) have been whitelisted for use. The theme uses a few of them which can be found under `gems`. Additional settings and configurations are documented in the links below.
 
-| Plugin | Description                                                                               |
-| --- | --- |
-| [jekyll-paginate][jekyll-paginate] | Pagination Generator for Jekyll. |
-| [jekyll-sitemap][jekyll-sitemap] | Jekyll plugin to silently generate a sitemaps.org compliant sitemap for your Jekyll site. |
-| [jekyll-gist][jekyll-gist] | Liquid tag for displaying GitHub Gists in Jekyll sites. |
-| [jekyll-feed][jekyll-feed] | A Jekyll plugin to generate an Atom (RSS-like) feed of your Jekyll posts. |
-| [jekyll-include-cache][jekyll-include-cache] | Liquid tag that caches Liquid includes. |
-
-[jekyll-paginate]: https://github.com/jekyll/jekyll-paginate
-[jekyll-sitemap]: https://github.com/jekyll/jekyll-sitemap
-[jekyll-gist]: https://github.com/jekyll/jekyll-gist
-[jekyll-feed]: https://github.com/jekyll/jekyll-feed
-[jekyll-include-cache]: https://github.com/benbalter/jekyll-include-cache
+| Plugin | Description |
+| :--- | :--- |
+| [jekyll-paginate](https://github.com/jekyll/jekyll-paginate) | Pagination Generator for Jekyll. |
+| [jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap) | Jekyll plugin to silently generate a sitemaps.org compliant sitemap for your Jekyll site. |
+| [jekyll-gist](https://github.com/jekyll/jekyll-gist) | Liquid tag for displaying GitHub Gists in Jekyll sites. |
+| [jekyll-feed](https://github.com/jekyll/jekyll-feed) | A Jekyll plugin to generate an Atom \(RSS-like\) feed of your Jekyll posts. |
+| [jekyll-include-cache](https://github.com/benbalter/jekyll-include-cache) | Liquid tag that caches Liquid includes. |
 
 If you're hosting elsewhere then you don't really have to worry about what is whitelisted as you are free to include whatever [Jekyll plugins](https://jekyllrb.com/docs/plugins/) you desire.
 
-**Note:** The [jekyll-include-cache](https://github.com/benbalter/jekyll-include-cache) plugin needs to be installed in your `Gemfile` and added to the `plugins` array of `_config.yml`. Otherwise you'll throw `Unknown tag 'include_cached'` errors at build.
-{: .notice--warning}
+**Note:** The [jekyll-include-cache](https://github.com/benbalter/jekyll-include-cache) plugin needs to be installed in your `Gemfile` and added to the `plugins` array of `_config.yml`. Otherwise you'll throw `Unknown tag 'include_cached'` errors at build. {: .notice--warning}
 
 ## Archive settings
 
-The theme ships with support for taxonomy (category and tag) pages. GitHub Pages hosted sites need to use a _Liquid only_ approach while those hosted elsewhere can use plugins like [**jekyll-archives**][jekyll-archives] to generate these pages automatically.
-
-[jekyll-archives]: https://github.com/jekyll/jekyll-archives
+The theme ships with support for taxonomy \(category and tag\) pages. GitHub Pages hosted sites need to use a _Liquid only_ approach while those hosted elsewhere can use plugins like [**jekyll-archives**](https://github.com/jekyll/jekyll-archives) to generate these pages automatically.
 
 The default `type` is set to use Liquid.
 
-**Note:** `category_archive` and `tag_archive` were previously named `categories` and `tags`. Names were changed to avoid possible conflicts with `site.categories` and `site.tags`.
-{: .notice--danger}
+**Note:** `category_archive` and `tag_archive` were previously named `categories` and `tags`. Names were changed to avoid possible conflicts with `site.categories` and `site.tags`. {: .notice--danger}
 
 ```yaml
 category_archive:
@@ -1024,14 +936,13 @@ tag_archive:
 
 Which would create category and tag links in the breadcrumbs and page meta like: `/categories/#foo` and `/tags/#foo`.
 
-**Note:** these are simply hash (fragment) links into the full taxonomy index pages. For them to resolve properly, the category and tag index pages need to exist at [`/categories/index.html`](https://github.com/{{ site.repository }}/blob/master/docs/_pages/category-archive.md) (copy to `_pages/category-archive.md`) and [`/tags/index.html`](https://github.com/{{ site.repository }}/blob/master/docs/_pages/tag-archive.md) (copy to `_pages/tag-archive.md`).
-{: .notice--warning}
+**Note:** these are simply hash \(fragment\) links into the full taxonomy index pages. For them to resolve properly, the category and tag index pages need to exist at [`/categories/index.html`](https://github.com/{{%20site.repository%20}}/blob/master/docs/_pages/category-archive.md) \(copy to `_pages/category-archive.md`\) and [`/tags/index.html`](https://github.com/{{%20site.repository%20}}/blob/master/docs/_pages/tag-archive.md) \(copy to `_pages/tag-archive.md`\). {: .notice--warning}
 
-If you have the luxury of using Jekyll Plugins, then [**jekyll-archives**][jekyll-archives] will create a better experience as discrete taxonomy pages would be generated, and their corresponding links would be "real" (not just hash/fragment links into a larger index). However, the plugin will not generate the taxonomy index pages (`category-archive.md` and `tag-archive.md`) so you'd still need to manually create them if you'd like to have them (see note above).
+If you have the luxury of using Jekyll Plugins, then [**jekyll-archives**](https://github.com/jekyll/jekyll-archives) will create a better experience as discrete taxonomy pages would be generated, and their corresponding links would be "real" \(not just hash/fragment links into a larger index\). However, the plugin will not generate the taxonomy index pages \(`category-archive.md` and `tag-archive.md`\) so you'd still need to manually create them if you'd like to have them \(see note above\).
 
 First, you'll need to make sure that the `jekyll-archives` plugin is installed. Either run `gem install jekyll-archives` or add the following to your `Gemfile`:
 
-```
+```text
 group :jekyll_plugins do
   gem "jekyll-archives"
 end
@@ -1060,36 +971,15 @@ jekyll-archives:
     tag: /tags/:name/
 ```
 
-**Note:** The `archive-taxonomy` layout used by jekyll-archives is provided with the theme and can be found in the `_layouts` folder.
-{: .notice--info}
+**Note:** The `archive-taxonomy` layout used by jekyll-archives is provided with the theme and can be found in the `_layouts` folder. {: .notice--info}
 
-<div class="notice--success" markdown="1">
+####  Tip
 
-<h4 class="no_toc"><i class="fas fa-lightbulb"></i> Tip</h4>
-
-To apply [Front Matter defaults](https://jekyllrb.com/docs/configuration/front-matter-defaults/) to pages generated by the `jekyll-archives` plugin, you can specify a scope of an empty `path` and a `type` of either `tag` or `category`.
-
-For example, the following configuration enables author profile on tag archives and disables comments on category archives.
-
-```yaml
-defaults:
-  - scope:
-      path: ""
-      type: tag
-    values:
-      author_profile: true
-  - scope:
-      path: ""
-      type: category
-    values:
-      comments: false
-```
-
-</div>
+ To apply \[Front Matter defaults\]\(https://jekyllrb.com/docs/configuration/front-matter-defaults/\) to pages generated by the \`jekyll-archives\` plugin, you can specify a scope of an empty \`path\` and a \`type\` of either \`tag\` or \`category\`. For example, the following configuration enables author profile on tag archives and disables comments on category archives. \`\`\`yaml defaults: - scope: path: "" type: tag values: author\_profile: true - scope: path: "" type: category values: comments: false \`\`\`
 
 ## HTML compression
 
-If you care at all about performance (and really who doesn't) compressing the HTML files generated by Jekyll is a good thing to do.
+If you care at all about performance \(and really who doesn't\) compressing the HTML files generated by Jekyll is a good thing to do.
 
 If you're hosting with GitHub Pages there aren't many options afforded to you for optimizing the HTML Jekyll generates. Thankfully there is some Liquid wizardry you can use to strip whitespace and comments to reduce file size.
 
@@ -1102,8 +992,7 @@ compress_html:
     envs: development  # disable compression in dev environment
 ```
 
-**Caution:** Inline JavaScript comments can cause problems with `compress.html`, so be sure to `/* comment this way */` and avoid `// these sorts of comments`.
-{: .notice--warning}
+**Caution:** Inline JavaScript comments can cause problems with `compress.html`, so be sure to `/* comment this way */` and avoid `// these sorts of comments`. {: .notice--warning}
 
-**Note:** CDN services such as CloudFlare provide optional automatic minification for HTML, CSS, and JavaScript. If you are serving your site via such a service and have minification enabled, this configuration might be redundant.
-{: .notice--info}
+**Note:** CDN services such as CloudFlare provide optional automatic minification for HTML, CSS, and JavaScript. If you are serving your site via such a service and have minification enabled, this configuration might be redundant. {: .notice--info}
+

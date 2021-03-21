@@ -1,11 +1,13 @@
 ---
-title: "Layout: Sidebar with Navigation List"
-excerpt: "A post with a sidebar navigation list."
+title: 'Layout: Sidebar with Navigation List'
+excerpt: A post with a sidebar navigation list.
 author_profile: false
 sidebar:
-  title: "Sample Title"
+  title: Sample Title
   nav: sidebar-sample
 ---
+
+# 2012-03-15-layout-sidebar-nav-list
 
 This post has a custom navigation list set in the post's YAML Front Matter.
 
@@ -60,3 +62,4 @@ sidebar-sample:
       - title: "Child Page D2"
         url: /
 ```
+

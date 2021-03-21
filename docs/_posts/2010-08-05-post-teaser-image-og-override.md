@@ -1,5 +1,5 @@
 ---
-title: "Post: Teaser Image with OpenGraph Override"
+title: 'Post: Teaser Image with OpenGraph Override'
 header:
   teaser: /assets/images/page-header-teaser.png
   og_image: /assets/images/page-header-og-image.png
@@ -10,8 +10,10 @@ tags:
   - edge case
   - image
   - layout
-last_modified_at: 2017-10-26T15:12:19-04:00
+last_modified_at: '2017-10-26T19:12:19.000Z'
 ---
+
+# 2010-08-05-post-teaser-image-og-override
 
 This post has a teaser image with an OpenGraph override.
 
@@ -20,3 +22,4 @@ header:
   teaser: /assets/images/page-header-teaser.png
   og_image: /assets/images/page-header-og-image.png
 ```
+
